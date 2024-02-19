@@ -1,24 +1,17 @@
 const express = require("express");
 const router = express.Router();
 const fs = require("fs");
-const crypto = require("crypto");
+const { faker } = require("@faker-js/faker");
 /**
  * params: /
- * description: get all books
+ * description: get all pals
  * query:
  * method: get
  */
 
 router.get("/", (req, res, next) => {
   //input validation
-  const allowedFilter = [
-    "author",
-    "country",
-    "language",
-    "title",
-    "page",
-    "limit",
-  ];
+  const allowedFilter = ["name", "types"];
   try {
     let { page, limit, ...filterQuery } = req.query;
     page = parseInt(page) || 1;
@@ -39,20 +32,47 @@ router.get("/", (req, res, next) => {
     let offset = limit * (page - 1);
 
     //Read data from db.json then parse to JSobject
-    let db = fs.readFileSync("db.json", "utf-8");
+    let db = fs.readFileSync(
+      "D:\\VSCODE\\coderdex-fs\\server\\db.json",
+      "utf-8"
+    );
     db = JSON.parse(db);
-    const { books } = db;
+    const { data } = db;
     //Filter data by title
     let result = [];
 
     if (filterKeys.length) {
       filterKeys.forEach((condition) => {
-        result = result.length
-          ? result.filter((book) => book[condition] === filterQuery[condition])
-          : books.filter((book) => book[condition] === filterQuery[condition]);
+        if (condition === "name") {
+          result = result.length
+            ? result.filter((pal) =>
+                pal[condition]
+                  .toLowerCase()
+                  .includes(filterQuery[condition].toLowerCase())
+              )
+            : data.filter((pal) =>
+                pal[condition]
+                  .toLowerCase()
+                  .includes(filterQuery[condition].toLowerCase())
+              );
+        } else if (condition === "types") {
+          result = result.length
+            ? result.filter((pal) =>
+                pal[condition].some(
+                  (type) =>
+                    type.toLowerCase() === filterQuery[condition].toLowerCase()
+                )
+              )
+            : data.filter((pal) =>
+                pal[condition].some(
+                  (type) =>
+                    type.toLowerCase() === filterQuery[condition].toLowerCase()
+                )
+              );
+        }
       });
     } else {
-      result = books;
+      result = data;
     }
     //then select number of result by offset
     result = result.slice(offset, offset + limit);
@@ -64,56 +84,124 @@ router.get("/", (req, res, next) => {
 });
 
 /**
+ * params: /:id
+ * description: get single pals with adjacent pals
+ * query:
+ * method: get
+ */
+
+router.get("/:id", (req, res, next) => {
+  try {
+    const id = parseInt(req.params.id);
+    if (isNaN(id)) {
+      throw new Error("Invalid ID");
+    }
+
+    let db = fs.readFileSync(
+      "D:\\VSCODE\\coderdex-fs\\server\\db.json",
+      "utf-8"
+    );
+    db = JSON.parse(db);
+    const { data } = db;
+
+    if (id < 1 || id > data.length) {
+      throw new Error("ID out of range");
+    }
+
+    const prevId = id === 1 ? data.length : id - 1;
+    const nextId = id === data.length ? 1 : id + 1;
+
+    const pal = data.find((pal) => pal.id === id);
+    const prevPal = data.find((pal) => pal.id === prevId);
+    const nextPal = data.find((pal) => pal.id === nextId);
+
+    res.status(200).send({ pal, prevPal, nextPal });
+  } catch (error) {
+    next(error);
+  }
+});
+
+/**
  * params: /
- * description: post a book
+ * description: post a pal
  * query:
  * method: post
  */
 
+const pokemonTypes = [
+  "bug",
+  "dragon",
+  "fairy",
+  "fire",
+  "ghost",
+  "ground",
+  "normal",
+  "psychic",
+  "steel",
+  "dark",
+  "electric",
+  "fighting",
+  "flying",
+  "grass",
+  "ice",
+  "poison",
+  "rock",
+  "water",
+];
+
 router.post("/", (req, res, next) => {
-  //post input validation
   try {
-    const { author, country, imageLink, language, pages, title, year } =
-      req.body;
-    if (
-      !author ||
-      !country ||
-      !imageLink ||
-      !language ||
-      !pages ||
-      !title ||
-      !year
-    ) {
-      const exception = new Error(`Missing body info`);
-      exception.statusCode = 401;
+    const { id, name, types, url } = req.body;
+
+    // Check for missing data
+    if (!id || !name || !types || !url) {
+      const exception = new Error("Missing required data.");
+      exception.statusCode = 400;
       throw exception;
     }
-    //post processing
-    const newBook = {
-      author,
-      country,
-      imageLink,
-      language,
-      pages: parseInt(pages) || 1,
-      title,
-      year: parseInt(year) || 0,
-      id: crypto.randomBytes(4).toString("hex"),
-    };
-    //Read data from db.json then parse to JSobject
-    let db = fs.readFileSync("db.json", "utf-8");
-    db = JSON.parse(db);
-    const { books } = db;
 
-    //Add new book to book JS object
-    books.push(newBook);
-    //Add new book to db JS object
-    db.books = books;
-    //db JSobject to JSON string
+    // Check for invalid number of types
+    if (types.length < 1 || types.length > 2) {
+      const exception = new Error("Pal can only have one or two types.");
+      exception.statusCode = 400;
+      throw exception;
+    }
+
+    // Check for invalid types
+    if (!types.every((type) => pokemonTypes.includes(type))) {
+      const exception = new Error("Pal's type is invalid.");
+      exception.statusCode = 400;
+      throw exception;
+    }
+
+    // Read data from db.json then parse to JS object
+    let db = fs.readFileSync(
+      "D:\\VSCODE\\coderdex-fs\\server\\db.json",
+      "utf-8"
+    );
+    db = JSON.parse(db);
+    const { data } = db;
+
+    // Check if Pokémon already exists
+    if (data.some((pal) => pal.id === id || pal.name === name)) {
+      const exception = new Error("The Pal already exists.");
+      exception.statusCode = 400;
+      throw exception;
+    }
+
+    // Add new Pokémon to data array
+    const newPal = { id, name, types, url };
+    data.push(newPal);
+
+    // Update db object and convert it back to a JSON string
+    db.data = data;
     db = JSON.stringify(db);
-    //write and save to db.json
-    fs.writeFileSync("db.json", db);
-    //post send response
-    res.status(200).send(newBook);
+
+    // Write the updated db object back to db.json
+    fs.writeFileSync("D:\\VSCODE\\coderdex-fs\\server\\db.json", db);
+
+    // Send the new Pokémon in the response
+    res.status(201).send(newPal);
   } catch (error) {
     next(error);
   }
@@ -153,7 +241,10 @@ router.put("/:bookId", (req, res, next) => {
     }
     //put processing
     //Read data from db.json then parse to JSobject
-    let db = fs.readFileSync("db.json", "utf-8");
+    let db = fs.readFileSync(
+      "D:\\VSCODE\\coderdex-fs\\server\\db.json",
+      "utf-8"
+    );
     db = JSON.parse(db);
     const { books } = db;
     //find book by id
@@ -192,7 +283,10 @@ router.delete("/:bookId", (req, res, next) => {
     const { bookId } = req.params;
     //delete processing
     //Read data from db.json then parse to JSobject
-    let db = fs.readFileSync("db.json", "utf-8");
+    let db = fs.readFileSync(
+      "D:\\VSCODE\\coderdex-fs\\server\\db.json",
+      "utf-8"
+    );
     db = JSON.parse(db);
     const { books } = db;
     //find book by id
