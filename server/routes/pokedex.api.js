@@ -104,16 +104,17 @@ router.get("/:id", (req, res, next) => {
     db = JSON.parse(db);
     const { data } = db;
 
-    if (id < 1 || id > data.length) {
-      throw new Error("ID out of range");
+    const index = data.findIndex((pal) => pal.id === id);
+    if (index === -1) {
+      throw new Error("ID not found");
     }
 
-    const prevId = id === 1 ? data.length : id - 1;
-    const nextId = id === data.length ? 1 : id + 1;
+    const prevIndex = index === 0 ? data.length - 1 : index - 1;
+    const nextIndex = index === data.length - 1 ? 0 : index + 1;
 
-    const pal = data.find((pal) => pal.id === id);
-    const prevPal = data.find((pal) => pal.id === prevId);
-    const nextPal = data.find((pal) => pal.id === nextId);
+    const pal = data[index];
+    const prevPal = data[prevIndex];
+    const nextPal = data[nextIndex];
 
     res.status(200).send({ pal, prevPal, nextPal });
   } catch (error) {
@@ -209,25 +210,20 @@ router.post("/", (req, res, next) => {
 
 /**
  * params: /
- * description: update a book
+ * description: update a pal
  * query:
  * method: put
  */
 
-router.put("/:bookId", (req, res, next) => {
+router.put("/:Id", (req, res, next) => {
   //put input validation
   try {
-    const allowUpdate = [
-      "author",
-      "country",
-      "imageLink",
-      "language",
-      "pages",
-      "title",
-      "year",
-    ];
+    const allowUpdate = ["name", "types", "url", "id"];
 
-    const { bookId } = req.params;
+    const id = parseInt(req.params.Id);
+    if (isNaN(id)) {
+      throw new Error("Invalid ID");
+    }
 
     const updates = req.body;
     const updateKeys = Object.keys(updates);
@@ -246,17 +242,17 @@ router.put("/:bookId", (req, res, next) => {
       "utf-8"
     );
     db = JSON.parse(db);
-    const { books } = db;
-    //find book by id
-    const targetIndex = books.findIndex((book) => book.id === bookId);
+    const { data } = db;
+    //find pal by id
+    const targetIndex = data.findIndex((pal) => pal.id === id);
     if (targetIndex < 0) {
-      const exception = new Error(`Book not found`);
+      const exception = new Error(`pal not found`);
       exception.statusCode = 404;
       throw exception;
     }
-    //Update new content to db book JS object
-    const updatedBook = { ...db.books[targetIndex], ...updates };
-    db.books[targetIndex] = updatedBook;
+    //Update new content to db pal JS object
+    const updatedPal = { ...db.data[targetIndex], ...updates };
+    db.data[targetIndex] = updatedPal;
 
     //db JSobject to JSON string
 
@@ -264,7 +260,7 @@ router.put("/:bookId", (req, res, next) => {
     //write and save to db.json
     fs.writeFileSync("db.json", db);
     //put send response
-    res.status(200).send(updatedBook);
+    res.status(200).send(updatedPal);
   } catch (error) {
     next(error);
   }
@@ -272,15 +268,18 @@ router.put("/:bookId", (req, res, next) => {
 
 /**
  * params: /
- * description: update a book
+ * description: delete a pa,l
  * query:
  * method: delete
  */
 
-router.delete("/:bookId", (req, res, next) => {
+router.delete("/:Id", (req, res, next) => {
   //delete input validation
   try {
-    const { bookId } = req.params;
+    const id = parseInt(req.params.Id);
+    if (isNaN(id)) {
+      throw new Error("Invalid ID");
+    }
     //delete processing
     //Read data from db.json then parse to JSobject
     let db = fs.readFileSync(
@@ -288,22 +287,22 @@ router.delete("/:bookId", (req, res, next) => {
       "utf-8"
     );
     db = JSON.parse(db);
-    const { books } = db;
-    //find book by id
-    const targetIndex = books.findIndex((book) => book.id === bookId);
+    const { data } = db;
+    //find pal by id
+    const targetIndex = data.findIndex((pad) => pad.id === id);
     if (targetIndex < 0) {
-      const exception = new Error(`Book not found`);
+      const exception = new Error(`Pal not found`);
       exception.statusCode = 404;
       throw exception;
     }
-    //filter db books object
-    db.books = books.filter((book) => book.id !== bookId);
+    //filter db pal object
+    db.data = data.filter((pal) => pal.id !== id);
     //db JSobject to JSON string
 
     db = JSON.stringify(db);
     //write and save to db.json
 
-    fs.writeFileSync("db.json", db);
+    fs.writeFileSync("D:\\VSCODE\\coderdex-fs\\server\\db.json", db);
     //delete send response
     res.status(200).send({});
   } catch (error) {
