@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 const fs = require("fs");
-const { faker } = require("@faker-js/faker");
 /**
  * params: /
  * description: get all pals
@@ -268,7 +267,7 @@ router.put("/:Id", (req, res, next) => {
 
 /**
  * params: /
- * description: delete a pa,l
+ * description: delete a pal
  * query:
  * method: delete
  */
