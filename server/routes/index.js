@@ -7,5 +7,5 @@ router.get("/", function (req, res, next) {
 });
 
 const pokedexRouter = require("./pokedex.api.js");
-router.use("/poke", pokedexRouterRouter);
+router.use("/poke", pokedexRouter);
 module.exports = router;
