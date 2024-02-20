@@ -6,12 +6,16 @@ import {
   Stack,
   Typography,
   Button,
+  Dialog,
 } from "@mui/material";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import { PokeType } from "../components/PokeType";
-import { getPokemonById } from "../features/pokemons/pokemonSlice";
+import {
+  getPokemonById,
+  deletePokemon,
+} from "../features/pokemons/pokemonSlice";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
@@ -27,11 +31,21 @@ export const DetailPage = () => {
   const { pokemon, nextPokemon, previousPokemon } = useSelector(
     (state) => state.pokemons.pokemon
   );
+
   const { id } = useParams();
+  const navigate = useNavigate();
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(getPokemonById(id));
   }, [id, dispatch]);
+
+  const handleDelete = () => {
+    dispatch(deletePokemon({ id }));
+    if (nextPokemon) {
+      navigate(`/pokemons/${nextPokemon.id}`);
+    }
+  };
 
   const weaknesses = calculateWeaknesses(pokemon?.types);
 
@@ -182,6 +196,7 @@ export const DetailPage = () => {
                 variant="contained"
                 color="error"
                 sx={{ marginTop: 1, borderRadius: 5 }}
+                onClick={handleDelete}
               >
                 Nuke It Before It Hatches
               </Button>
