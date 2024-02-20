@@ -7,7 +7,7 @@ export const getPokemons = createAsyncThunk(
   async ({ page, search, type }, { rejectWithValue }) => {
     try {
       let url = `/pokemons?page=${page}&limit=${POKEMONS_PER_PAGE}`;
-      if (search) url += `&search=${search}`;
+      if (search) url += `&name=${search}`;
       if (type) url += `&type=${type}`;
       const response = await apiService.get(url);
       console.log(response);

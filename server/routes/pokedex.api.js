@@ -8,9 +8,30 @@ const fs = require("fs");
  * method: get
  */
 
+const pokemonTypes = [
+  "bug",
+  "dragon",
+  "fairy",
+  "fire",
+  "ghost",
+  "ground",
+  "normal",
+  "psychic",
+  "steel",
+  "dark",
+  "electric",
+  "fighting",
+  "flying",
+  "grass",
+  "ice",
+  "poison",
+  "rock",
+  "water",
+];
+
 router.get("/", (req, res, next) => {
   //input validation
-  const allowedFilter = ["name", "types"];
+  const allowedFilter = ["name", "types", "type"];
   try {
     let { page, limit, ...filterQuery } = req.query;
     page = parseInt(page) || 1;
@@ -54,16 +75,16 @@ router.get("/", (req, res, next) => {
                   .toLowerCase()
                   .includes(filterQuery[condition].toLowerCase())
               );
-        } else if (condition === "types") {
+        } else if (condition === "types" || condition === "type") {
           result = result.length
             ? result.filter((pal) =>
-                pal[condition].some(
+                pal["types"].some(
                   (type) =>
                     type.toLowerCase() === filterQuery[condition].toLowerCase()
                 )
               )
             : data.filter((pal) =>
-                pal[condition].some(
+                pal["types"].some(
                   (type) =>
                     type.toLowerCase() === filterQuery[condition].toLowerCase()
                 )
@@ -111,11 +132,11 @@ router.get("/:id", (req, res, next) => {
     const prevIndex = index === 0 ? data.length - 1 : index - 1;
     const nextIndex = index === data.length - 1 ? 0 : index + 1;
 
-    const pal = data[index];
-    const prevPal = data[prevIndex];
-    const nextPal = data[nextIndex];
+    const pokemon = data[index];
+    const previousPokemon = data[prevIndex];
+    const nextPokemon = data[nextIndex];
 
-    res.status(200).send({ pal, prevPal, nextPal });
+    res.status(200).send({ pokemon, previousPokemon, nextPokemon });
   } catch (error) {
     next(error);
   }
@@ -127,27 +148,6 @@ router.get("/:id", (req, res, next) => {
  * query:
  * method: post
  */
-
-const pokemonTypes = [
-  "bug",
-  "dragon",
-  "fairy",
-  "fire",
-  "ghost",
-  "ground",
-  "normal",
-  "psychic",
-  "steel",
-  "dark",
-  "electric",
-  "fighting",
-  "flying",
-  "grass",
-  "ice",
-  "poison",
-  "rock",
-  "water",
-];
 
 router.post("/", (req, res, next) => {
   try {
