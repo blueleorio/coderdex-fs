@@ -1,9 +1,9 @@
 var express = require("express");
-var cors = require("cors");
+// var cors = require("cors");
 var router = express.Router();
 
 // Enable CORS for all routes
-router.use(cors());
+// router.use(cors());
 /* GET home page. */
 router.get("/", function (req, res, next) {
   res.status(200).send("Welcome to CoderDex!");
