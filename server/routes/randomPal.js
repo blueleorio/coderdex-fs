@@ -26,7 +26,7 @@ function generateRandomPokemon() {
     return len ? arr[Math.floor(Math.random() * len)] : undefined;
   };
   return {
-    id: faker.number.int({ min: 1000, max: 1020 }),
+    id: faker.number.int({ min: 800, max: 999 }),
     name: faker.person.firstName(),
     types: [sample(pokemonTypes), sample(pokemonTypes)],
     url: faker.image.url({ width: 256, height: 256 }),
