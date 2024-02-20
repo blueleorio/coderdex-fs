@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 import { alpha, Stack, Button } from "@mui/material";
 import { LoadingButton } from "@mui/lab";
 
-import { addPokemon } from "../features/pokemons/pokemonSlice";
+import { addPokemon, editPokemon } from "../features/pokemons/pokemonSlice";
 import { useNavigate } from "react-router-dom";
 
 import { fakerVI as faker } from "@faker-js/faker";
@@ -31,7 +31,7 @@ const defaultValues = {
   type2: "",
 };
 
-export default function PokemonModal({ open, setOpen }) {
+export default function PokemonModal({ open, setOpen, option }) {
   const navigate = useNavigate();
   const methods = useForm(defaultValues);
   const {
@@ -42,8 +42,15 @@ export default function PokemonModal({ open, setOpen }) {
 
   const onSubmit = (data) => {
     const { name, id, url, type1, type2 } = data;
-    dispatch(addPokemon({ name, id, imgUrl: url, types: [type1, type2] }));
-    navigate(`/pokemons/${id}`);
+    if (option === "create") {
+      dispatch(addPokemon({ name, id, imgUrl: url, types: [type1, type2] }));
+    }
+    if (option === "update") {
+      dispatch(editPokemon({ name, id, imgUrl: url, types: [type1, type2] }));
+      console.log("update pal - SUBMITTING...");
+    }
+    // setOpen(false);
+    // navigate(`/pokemons/${id}`);
   };
 
   const handleClose = () => setOpen(false);
@@ -83,6 +90,14 @@ export default function PokemonModal({ open, setOpen }) {
 
   const Palomize = () => {
     const pal = generateRandomPal();
+    methods.setValue("name", pal.name);
+    methods.setValue("id", pal.id);
+    methods.setValue("url", pal.url);
+    methods.setValue("type1", pal.types[0]);
+    methods.setValue("type2", pal.types[1]);
+  };
+
+  const palStat = () => {
     methods.setValue("name", pal.name);
     methods.setValue("id", pal.id);
     methods.setValue("url", pal.url);
@@ -186,7 +201,7 @@ export default function PokemonModal({ open, setOpen }) {
                     // || isLoading
                   }
                 >
-                  Create Pokemon
+                  {option} Pokemon
                 </LoadingButton>
               </Box>
             </Stack>

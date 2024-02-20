@@ -6,9 +6,8 @@ import {
   Stack,
   Typography,
   Button,
-  Dialog,
 } from "@mui/material";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { PokeType } from "../components/PokeType";
@@ -19,6 +18,7 @@ import {
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
+import PokemonModal from "../components/PokemonModal";
 const styles = {
   container: {
     backgroundColor: "white",
@@ -31,6 +31,9 @@ export const DetailPage = () => {
   const { pokemon, nextPokemon, previousPokemon } = useSelector(
     (state) => state.pokemons.pokemon
   );
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const option = "update";
 
   const { id } = useParams();
   const navigate = useNavigate();
@@ -192,14 +195,33 @@ export const DetailPage = () => {
                   borderRadius: 5,
                 }}
               />
-              <Button
-                variant="contained"
-                color="error"
-                sx={{ marginTop: 1, borderRadius: 5 }}
-                onClick={handleDelete}
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
               >
-                Nuke It Before It Hatches
-              </Button>
+                <Button
+                  variant="contained"
+                  color="error"
+                  sx={{ marginTop: 1, borderRadius: 5 }}
+                  onClick={handleDelete}
+                >
+                  Nuke It Before It Hatches
+                </Button>
+                <PokemonModal open={open} setOpen={setOpen} option={option} />
+
+                <Button
+                  variant="contained"
+                  color="success"
+                  sx={{ marginTop: 1, borderRadius: 5 }}
+                  onClick={handleOpen}
+                >
+                  Raise It After It Hatches
+                </Button>
+              </Box>
             </Box>
           </Grid>
           <Grid item xs={12} md={6}>
