@@ -21,13 +21,13 @@
     {
       "id": 4,
       "name": "charmander",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/4.png"
     },
     {
       "id": 5,
       "name": "charmeleon",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/5.png"
     },
     {
@@ -39,31 +39,31 @@
     {
       "id": 7,
       "name": "squirtle",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/7.png"
     },
     {
       "id": 8,
       "name": "wartortle",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/8.png"
     },
     {
       "id": 9,
       "name": "blastoise",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/9.png"
     },
     {
       "id": 10,
       "name": "caterpie",
-      "types": ["Bug", null],
+      "types": ["Bug"],
       "url": "http://localhost:5000/images/pokemon_transparent/10.png"
     },
     {
       "id": 11,
       "name": "metapod",
-      "types": ["Bug", null],
+      "types": ["Bug"],
       "url": "http://localhost:5000/images/pokemon_transparent/11.png"
     },
     {
@@ -111,13 +111,13 @@
     {
       "id": 19,
       "name": "rattata",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/19.png"
     },
     {
       "id": 20,
       "name": "raticate",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/20.png"
     },
     {
@@ -135,49 +135,49 @@
     {
       "id": 23,
       "name": "ekans",
-      "types": ["Poison", null],
+      "types": ["Poison"],
       "url": "http://localhost:5000/images/pokemon_transparent/23.png"
     },
     {
       "id": 24,
       "name": "arbok",
-      "types": ["Poison", null],
+      "types": ["Poison"],
       "url": "http://localhost:5000/images/pokemon_transparent/24.png"
     },
     {
       "id": 25,
       "name": "pikachu",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/25.png"
     },
     {
       "id": 26,
       "name": "raichu",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/26.png"
     },
     {
       "id": 27,
       "name": "sandshrew",
-      "types": ["Ground", null],
+      "types": ["Ground"],
       "url": "http://localhost:5000/images/pokemon_transparent/27.png"
     },
     {
       "id": 28,
       "name": "sandslash",
-      "types": ["Ground", null],
+      "types": ["Ground"],
       "url": "http://localhost:5000/images/pokemon_transparent/28.png"
     },
     {
       "id": 29,
       "name": "nidoran-f",
-      "types": ["Poison", null],
+      "types": ["Poison"],
       "url": "http://localhost:5000/images/pokemon_transparent/29.png"
     },
     {
       "id": 30,
       "name": "nidorina",
-      "types": ["Poison", null],
+      "types": ["Poison"],
       "url": "http://localhost:5000/images/pokemon_transparent/30.png"
     },
     {
@@ -189,13 +189,13 @@
     {
       "id": 32,
       "name": "nidoran-m",
-      "types": ["Poison", null],
+      "types": ["Poison"],
       "url": "http://localhost:5000/images/pokemon_transparent/32.png"
     },
     {
       "id": 33,
       "name": "nidorino",
-      "types": ["Poison", null],
+      "types": ["Poison"],
       "url": "http://localhost:5000/images/pokemon_transparent/33.png"
     },
     {
@@ -207,25 +207,25 @@
     {
       "id": 35,
       "name": "clefairy",
-      "types": ["Fairy", null],
+      "types": ["Fairy"],
       "url": "http://localhost:5000/images/pokemon_transparent/35.png"
     },
     {
       "id": 36,
       "name": "clefable",
-      "types": ["Fairy", null],
+      "types": ["Fairy"],
       "url": "http://localhost:5000/images/pokemon_transparent/36.png"
     },
     {
       "id": 37,
       "name": "vulpix",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/37.png"
     },
     {
       "id": 38,
       "name": "ninetales",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/38.png"
     },
     {
@@ -297,73 +297,73 @@
     {
       "id": 50,
       "name": "diglett",
-      "types": ["Ground", null],
+      "types": ["Ground"],
       "url": "http://localhost:5000/images/pokemon_transparent/50.png"
     },
     {
       "id": 51,
       "name": "dugtrio",
-      "types": ["Ground", null],
+      "types": ["Ground"],
       "url": "http://localhost:5000/images/pokemon_transparent/51.png"
     },
     {
       "id": 52,
       "name": "meowth",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/52.png"
     },
     {
       "id": 53,
       "name": "persian",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/53.png"
     },
     {
       "id": 54,
       "name": "psyduck",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/54.png"
     },
     {
       "id": 55,
       "name": "golduck",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/55.png"
     },
     {
       "id": 56,
       "name": "mankey",
-      "types": ["Fighting", null],
+      "types": ["Fighting"],
       "url": "http://localhost:5000/images/pokemon_transparent/56.png"
     },
     {
       "id": 57,
       "name": "primeape",
-      "types": ["Fighting", null],
+      "types": ["Fighting"],
       "url": "http://localhost:5000/images/pokemon_transparent/57.png"
     },
     {
       "id": 58,
       "name": "growlithe",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/58.png"
     },
     {
       "id": 59,
       "name": "arcanine",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/59.png"
     },
     {
       "id": 60,
       "name": "poliwag",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/60.png"
     },
     {
       "id": 61,
       "name": "poliwhirl",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/61.png"
     },
     {
@@ -375,37 +375,37 @@
     {
       "id": 63,
       "name": "abra",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/63.png"
     },
     {
       "id": 64,
       "name": "kadabra",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/64.png"
     },
     {
       "id": 65,
       "name": "alakazam",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/65.png"
     },
     {
       "id": 66,
       "name": "machop",
-      "types": ["Fighting", null],
+      "types": ["Fighting"],
       "url": "http://localhost:5000/images/pokemon_transparent/66.png"
     },
     {
       "id": 67,
       "name": "machoke",
-      "types": ["Fighting", null],
+      "types": ["Fighting"],
       "url": "http://localhost:5000/images/pokemon_transparent/67.png"
     },
     {
       "id": 68,
       "name": "machamp",
-      "types": ["Fighting", null],
+      "types": ["Fighting"],
       "url": "http://localhost:5000/images/pokemon_transparent/68.png"
     },
     {
@@ -459,13 +459,13 @@
     {
       "id": 77,
       "name": "ponyta",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/77.png"
     },
     {
       "id": 78,
       "name": "rapidash",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/78.png"
     },
     {
@@ -513,7 +513,7 @@
     {
       "id": 86,
       "name": "seel",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/86.png"
     },
     {
@@ -525,19 +525,19 @@
     {
       "id": 88,
       "name": "grimer",
-      "types": ["Poison", null],
+      "types": ["Poison"],
       "url": "http://localhost:5000/images/pokemon_transparent/88.png"
     },
     {
       "id": 89,
       "name": "muk",
-      "types": ["Poison", null],
+      "types": ["Poison"],
       "url": "http://localhost:5000/images/pokemon_transparent/89.png"
     },
     {
       "id": 90,
       "name": "shellder",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/90.png"
     },
     {
@@ -573,37 +573,37 @@
     {
       "id": 96,
       "name": "drowzee",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/96.png"
     },
     {
       "id": 97,
       "name": "hypno",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/97.png"
     },
     {
       "id": 98,
       "name": "krabby",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/98.png"
     },
     {
       "id": 99,
       "name": "kingler",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/99.png"
     },
     {
       "id": 100,
       "name": "voltorb",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/100.png"
     },
     {
       "id": 101,
       "name": "electrode",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/101.png"
     },
     {
@@ -621,43 +621,43 @@
     {
       "id": 104,
       "name": "cubone",
-      "types": ["Ground", null],
+      "types": ["Ground"],
       "url": "http://localhost:5000/images/pokemon_transparent/104.png"
     },
     {
       "id": 105,
       "name": "marowak",
-      "types": ["Ground", null],
+      "types": ["Ground"],
       "url": "http://localhost:5000/images/pokemon_transparent/105.png"
     },
     {
       "id": 106,
       "name": "hitmonlee",
-      "types": ["Fighting", null],
+      "types": ["Fighting"],
       "url": "http://localhost:5000/images/pokemon_transparent/106.png"
     },
     {
       "id": 107,
       "name": "hitmonchan",
-      "types": ["Fighting", null],
+      "types": ["Fighting"],
       "url": "http://localhost:5000/images/pokemon_transparent/107.png"
     },
     {
       "id": 108,
       "name": "lickitung",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/108.png"
     },
     {
       "id": 109,
       "name": "koffing",
-      "types": ["Poison", null],
+      "types": ["Poison"],
       "url": "http://localhost:5000/images/pokemon_transparent/109.png"
     },
     {
       "id": 110,
       "name": "weezing",
-      "types": ["Poison", null],
+      "types": ["Poison"],
       "url": "http://localhost:5000/images/pokemon_transparent/110.png"
     },
     {
@@ -675,49 +675,49 @@
     {
       "id": 113,
       "name": "chansey",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/113.png"
     },
     {
       "id": 114,
       "name": "tangela",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/114.png"
     },
     {
       "id": 115,
       "name": "kangaskhan",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/115.png"
     },
     {
       "id": 116,
       "name": "horsea",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/116.png"
     },
     {
       "id": 117,
       "name": "seadra",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/117.png"
     },
     {
       "id": 118,
       "name": "goldeen",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/118.png"
     },
     {
       "id": 119,
       "name": "seaking",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/119.png"
     },
     {
       "id": 120,
       "name": "staryu",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/120.png"
     },
     {
@@ -747,31 +747,31 @@
     {
       "id": 125,
       "name": "electabuzz",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/125.png"
     },
     {
       "id": 126,
       "name": "magmar",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/126.png"
     },
     {
       "id": 127,
       "name": "pinsir",
-      "types": ["Bug", null],
+      "types": ["Bug"],
       "url": "http://localhost:5000/images/pokemon_transparent/127.png"
     },
     {
       "id": 128,
       "name": "tauros",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/128.png"
     },
     {
       "id": 129,
       "name": "magikarp",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/129.png"
     },
     {
@@ -789,37 +789,37 @@
     {
       "id": 132,
       "name": "ditto",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/132.png"
     },
     {
       "id": 133,
       "name": "eevee",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/133.png"
     },
     {
       "id": 134,
       "name": "vaporeon",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/134.png"
     },
     {
       "id": 135,
       "name": "jolteon",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/135.png"
     },
     {
       "id": 136,
       "name": "flareon",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/136.png"
     },
     {
       "id": 137,
       "name": "porygon",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/137.png"
     },
     {
@@ -855,7 +855,7 @@
     {
       "id": 143,
       "name": "snorlax",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/143.png"
     },
     {
@@ -879,13 +879,13 @@
     {
       "id": 147,
       "name": "dratini",
-      "types": ["Dragon", null],
+      "types": ["Dragon"],
       "url": "http://localhost:5000/images/pokemon_transparent/147.png"
     },
     {
       "id": 148,
       "name": "dragonair",
-      "types": ["Dragon", null],
+      "types": ["Dragon"],
       "url": "http://localhost:5000/images/pokemon_transparent/148.png"
     },
     {
@@ -897,79 +897,79 @@
     {
       "id": 150,
       "name": "mewtwo",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/150.png"
     },
     {
       "id": 151,
       "name": "mew",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/151.png"
     },
     {
       "id": 152,
       "name": "chikorita",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/152.png"
     },
     {
       "id": 153,
       "name": "bayleef",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/153.png"
     },
     {
       "id": 154,
       "name": "meganium",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/154.png"
     },
     {
       "id": 155,
       "name": "cyndaquil",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/155.png"
     },
     {
       "id": 156,
       "name": "quilava",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/156.png"
     },
     {
       "id": 157,
       "name": "typhlosion",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/157.png"
     },
     {
       "id": 158,
       "name": "totodile",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/158.png"
     },
     {
       "id": 159,
       "name": "croconaw",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/159.png"
     },
     {
       "id": 160,
       "name": "feraligatr",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/160.png"
     },
     {
       "id": 161,
       "name": "sentret",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/161.png"
     },
     {
       "id": 162,
       "name": "furret",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/162.png"
     },
     {
@@ -1029,13 +1029,13 @@
     {
       "id": 172,
       "name": "pichu",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/172.png"
     },
     {
       "id": 173,
       "name": "cleffa",
-      "types": ["Fairy", null],
+      "types": ["Fairy"],
       "url": "http://localhost:5000/images/pokemon_transparent/173.png"
     },
     {
@@ -1047,7 +1047,7 @@
     {
       "id": 175,
       "name": "togepi",
-      "types": ["Fairy", null],
+      "types": ["Fairy"],
       "url": "http://localhost:5000/images/pokemon_transparent/175.png"
     },
     {
@@ -1071,25 +1071,25 @@
     {
       "id": 179,
       "name": "mareep",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/179.png"
     },
     {
       "id": 180,
       "name": "flaaffy",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/180.png"
     },
     {
       "id": 181,
       "name": "ampharos",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/181.png"
     },
     {
       "id": 182,
       "name": "bellossom",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/182.png"
     },
     {
@@ -1107,13 +1107,13 @@
     {
       "id": 185,
       "name": "sudowoodo",
-      "types": ["Rock", null],
+      "types": ["Rock"],
       "url": "http://localhost:5000/images/pokemon_transparent/185.png"
     },
     {
       "id": 186,
       "name": "politoed",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/186.png"
     },
     {
@@ -1137,19 +1137,19 @@
     {
       "id": 190,
       "name": "aipom",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/190.png"
     },
     {
       "id": 191,
       "name": "sunkern",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/191.png"
     },
     {
       "id": 192,
       "name": "sunflora",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/192.png"
     },
     {
@@ -1173,13 +1173,13 @@
     {
       "id": 196,
       "name": "espeon",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/196.png"
     },
     {
       "id": 197,
       "name": "umbreon",
-      "types": ["Dark", null],
+      "types": ["Dark"],
       "url": "http://localhost:5000/images/pokemon_transparent/197.png"
     },
     {
@@ -1197,19 +1197,19 @@
     {
       "id": 200,
       "name": "misdreavus",
-      "types": ["Ghost", null],
+      "types": ["Ghost"],
       "url": "http://localhost:5000/images/pokemon_transparent/200.png"
     },
     {
       "id": 201,
       "name": "unown",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/201.png"
     },
     {
       "id": 202,
       "name": "wobbuffet",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/202.png"
     },
     {
@@ -1221,7 +1221,7 @@
     {
       "id": 204,
       "name": "pineco",
-      "types": ["Bug", null],
+      "types": ["Bug"],
       "url": "http://localhost:5000/images/pokemon_transparent/204.png"
     },
     {
@@ -1233,7 +1233,7 @@
     {
       "id": 206,
       "name": "dunsparce",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/206.png"
     },
     {
@@ -1251,13 +1251,13 @@
     {
       "id": 209,
       "name": "snubbull",
-      "types": ["Fairy", null],
+      "types": ["Fairy"],
       "url": "http://localhost:5000/images/pokemon_transparent/209.png"
     },
     {
       "id": 210,
       "name": "granbull",
-      "types": ["Fairy", null],
+      "types": ["Fairy"],
       "url": "http://localhost:5000/images/pokemon_transparent/210.png"
     },
     {
@@ -1293,19 +1293,19 @@
     {
       "id": 216,
       "name": "teddiursa",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/216.png"
     },
     {
       "id": 217,
       "name": "ursaring",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/217.png"
     },
     {
       "id": 218,
       "name": "slugma",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/218.png"
     },
     {
@@ -1335,13 +1335,13 @@
     {
       "id": 223,
       "name": "remoraid",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/223.png"
     },
     {
       "id": 224,
       "name": "octillery",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/224.png"
     },
     {
@@ -1383,43 +1383,43 @@
     {
       "id": 231,
       "name": "phanpy",
-      "types": ["Ground", null],
+      "types": ["Ground"],
       "url": "http://localhost:5000/images/pokemon_transparent/231.png"
     },
     {
       "id": 232,
       "name": "donphan",
-      "types": ["Ground", null],
+      "types": ["Ground"],
       "url": "http://localhost:5000/images/pokemon_transparent/232.png"
     },
     {
       "id": 233,
       "name": "porygon2",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/233.png"
     },
     {
       "id": 234,
       "name": "stantler",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/234.png"
     },
     {
       "id": 235,
       "name": "smeargle",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/235.png"
     },
     {
       "id": 236,
       "name": "tyrogue",
-      "types": ["Fighting", null],
+      "types": ["Fighting"],
       "url": "http://localhost:5000/images/pokemon_transparent/236.png"
     },
     {
       "id": 237,
       "name": "hitmontop",
-      "types": ["Fighting", null],
+      "types": ["Fighting"],
       "url": "http://localhost:5000/images/pokemon_transparent/237.png"
     },
     {
@@ -1431,43 +1431,43 @@
     {
       "id": 239,
       "name": "elekid",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/239.png"
     },
     {
       "id": 240,
       "name": "magby",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/240.png"
     },
     {
       "id": 241,
       "name": "miltank",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/241.png"
     },
     {
       "id": 242,
       "name": "blissey",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/242.png"
     },
     {
       "id": 243,
       "name": "raikou",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/243.png"
     },
     {
       "id": 244,
       "name": "entei",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/244.png"
     },
     {
       "id": 245,
       "name": "suicune",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/245.png"
     },
     {
@@ -1509,25 +1509,25 @@
     {
       "id": 252,
       "name": "treecko",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/252.png"
     },
     {
       "id": 253,
       "name": "grovyle",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/253.png"
     },
     {
       "id": 254,
       "name": "sceptile",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/254.png"
     },
     {
       "id": 255,
       "name": "torchic",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/255.png"
     },
     {
@@ -1545,7 +1545,7 @@
     {
       "id": 258,
       "name": "mudkip",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/258.png"
     },
     {
@@ -1563,37 +1563,37 @@
     {
       "id": 261,
       "name": "poochyena",
-      "types": ["Dark", null],
+      "types": ["Dark"],
       "url": "http://localhost:5000/images/pokemon_transparent/261.png"
     },
     {
       "id": 262,
       "name": "mightyena",
-      "types": ["Dark", null],
+      "types": ["Dark"],
       "url": "http://localhost:5000/images/pokemon_transparent/262.png"
     },
     {
       "id": 263,
       "name": "zigzagoon",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/263.png"
     },
     {
       "id": 264,
       "name": "linoone",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/264.png"
     },
     {
       "id": 265,
       "name": "wurmple",
-      "types": ["Bug", null],
+      "types": ["Bug"],
       "url": "http://localhost:5000/images/pokemon_transparent/265.png"
     },
     {
       "id": 266,
       "name": "silcoon",
-      "types": ["Bug", null],
+      "types": ["Bug"],
       "url": "http://localhost:5000/images/pokemon_transparent/266.png"
     },
     {
@@ -1605,7 +1605,7 @@
     {
       "id": 268,
       "name": "cascoon",
-      "types": ["Bug", null],
+      "types": ["Bug"],
       "url": "http://localhost:5000/images/pokemon_transparent/268.png"
     },
     {
@@ -1635,7 +1635,7 @@
     {
       "id": 273,
       "name": "seedot",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/273.png"
     },
     {
@@ -1707,7 +1707,7 @@
     {
       "id": 285,
       "name": "shroomish",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/285.png"
     },
     {
@@ -1719,19 +1719,19 @@
     {
       "id": 287,
       "name": "slakoth",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/287.png"
     },
     {
       "id": 288,
       "name": "vigoroth",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/288.png"
     },
     {
       "id": 289,
       "name": "slaking",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/289.png"
     },
     {
@@ -1755,31 +1755,31 @@
     {
       "id": 293,
       "name": "whismur",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/293.png"
     },
     {
       "id": 294,
       "name": "loudred",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/294.png"
     },
     {
       "id": 295,
       "name": "exploud",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/295.png"
     },
     {
       "id": 296,
       "name": "makuhita",
-      "types": ["Fighting", null],
+      "types": ["Fighting"],
       "url": "http://localhost:5000/images/pokemon_transparent/296.png"
     },
     {
       "id": 297,
       "name": "hariyama",
-      "types": ["Fighting", null],
+      "types": ["Fighting"],
       "url": "http://localhost:5000/images/pokemon_transparent/297.png"
     },
     {
@@ -1791,19 +1791,19 @@
     {
       "id": 299,
       "name": "nosepass",
-      "types": ["Rock", null],
+      "types": ["Rock"],
       "url": "http://localhost:5000/images/pokemon_transparent/299.png"
     },
     {
       "id": 300,
       "name": "skitty",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/300.png"
     },
     {
       "id": 301,
       "name": "delcatty",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/301.png"
     },
     {
@@ -1851,37 +1851,37 @@
     {
       "id": 309,
       "name": "electrike",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/309.png"
     },
     {
       "id": 310,
       "name": "manectric",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/310.png"
     },
     {
       "id": 311,
       "name": "plusle",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/311.png"
     },
     {
       "id": 312,
       "name": "minun",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/312.png"
     },
     {
       "id": 313,
       "name": "volbeat",
-      "types": ["Bug", null],
+      "types": ["Bug"],
       "url": "http://localhost:5000/images/pokemon_transparent/313.png"
     },
     {
       "id": 314,
       "name": "illumise",
-      "types": ["Bug", null],
+      "types": ["Bug"],
       "url": "http://localhost:5000/images/pokemon_transparent/314.png"
     },
     {
@@ -1893,13 +1893,13 @@
     {
       "id": 316,
       "name": "gulpin",
-      "types": ["Poison", null],
+      "types": ["Poison"],
       "url": "http://localhost:5000/images/pokemon_transparent/316.png"
     },
     {
       "id": 317,
       "name": "swalot",
-      "types": ["Poison", null],
+      "types": ["Poison"],
       "url": "http://localhost:5000/images/pokemon_transparent/317.png"
     },
     {
@@ -1917,13 +1917,13 @@
     {
       "id": 320,
       "name": "wailmer",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/320.png"
     },
     {
       "id": 321,
       "name": "wailord",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/321.png"
     },
     {
@@ -1941,31 +1941,31 @@
     {
       "id": 324,
       "name": "torkoal",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/324.png"
     },
     {
       "id": 325,
       "name": "spoink",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/325.png"
     },
     {
       "id": 326,
       "name": "grumpig",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/326.png"
     },
     {
       "id": 327,
       "name": "spinda",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/327.png"
     },
     {
       "id": 328,
       "name": "trapinch",
-      "types": ["Ground", null],
+      "types": ["Ground"],
       "url": "http://localhost:5000/images/pokemon_transparent/328.png"
     },
     {
@@ -1983,7 +1983,7 @@
     {
       "id": 331,
       "name": "cacnea",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/331.png"
     },
     {
@@ -2007,13 +2007,13 @@
     {
       "id": 335,
       "name": "zangoose",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/335.png"
     },
     {
       "id": 336,
       "name": "seviper",
-      "types": ["Poison", null],
+      "types": ["Poison"],
       "url": "http://localhost:5000/images/pokemon_transparent/336.png"
     },
     {
@@ -2043,7 +2043,7 @@
     {
       "id": 341,
       "name": "corphish",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/341.png"
     },
     {
@@ -2091,49 +2091,49 @@
     {
       "id": 349,
       "name": "feebas",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/349.png"
     },
     {
       "id": 350,
       "name": "milotic",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/350.png"
     },
     {
       "id": 351,
       "name": "castform",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/351.png"
     },
     {
       "id": 352,
       "name": "kecleon",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/352.png"
     },
     {
       "id": 353,
       "name": "shuppet",
-      "types": ["Ghost", null],
+      "types": ["Ghost"],
       "url": "http://localhost:5000/images/pokemon_transparent/353.png"
     },
     {
       "id": 354,
       "name": "banette",
-      "types": ["Ghost", null],
+      "types": ["Ghost"],
       "url": "http://localhost:5000/images/pokemon_transparent/354.png"
     },
     {
       "id": 355,
       "name": "duskull",
-      "types": ["Ghost", null],
+      "types": ["Ghost"],
       "url": "http://localhost:5000/images/pokemon_transparent/355.png"
     },
     {
       "id": 356,
       "name": "dusclops",
-      "types": ["Ghost", null],
+      "types": ["Ghost"],
       "url": "http://localhost:5000/images/pokemon_transparent/356.png"
     },
     {
@@ -2145,31 +2145,31 @@
     {
       "id": 358,
       "name": "chimecho",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/358.png"
     },
     {
       "id": 359,
       "name": "absol",
-      "types": ["Dark", null],
+      "types": ["Dark"],
       "url": "http://localhost:5000/images/pokemon_transparent/359.png"
     },
     {
       "id": 360,
       "name": "wynaut",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/360.png"
     },
     {
       "id": 361,
       "name": "snorunt",
-      "types": ["Ice", null],
+      "types": ["Ice"],
       "url": "http://localhost:5000/images/pokemon_transparent/361.png"
     },
     {
       "id": 362,
       "name": "glalie",
-      "types": ["Ice", null],
+      "types": ["Ice"],
       "url": "http://localhost:5000/images/pokemon_transparent/362.png"
     },
     {
@@ -2193,19 +2193,19 @@
     {
       "id": 366,
       "name": "clamperl",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/366.png"
     },
     {
       "id": 367,
       "name": "huntail",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/367.png"
     },
     {
       "id": 368,
       "name": "gorebyss",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/368.png"
     },
     {
@@ -2217,19 +2217,19 @@
     {
       "id": 370,
       "name": "luvdisc",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/370.png"
     },
     {
       "id": 371,
       "name": "bagon",
-      "types": ["Dragon", null],
+      "types": ["Dragon"],
       "url": "http://localhost:5000/images/pokemon_transparent/371.png"
     },
     {
       "id": 372,
       "name": "shelgon",
-      "types": ["Dragon", null],
+      "types": ["Dragon"],
       "url": "http://localhost:5000/images/pokemon_transparent/372.png"
     },
     {
@@ -2259,19 +2259,19 @@
     {
       "id": 377,
       "name": "regirock",
-      "types": ["Rock", null],
+      "types": ["Rock"],
       "url": "http://localhost:5000/images/pokemon_transparent/377.png"
     },
     {
       "id": 378,
       "name": "regice",
-      "types": ["Ice", null],
+      "types": ["Ice"],
       "url": "http://localhost:5000/images/pokemon_transparent/378.png"
     },
     {
       "id": 379,
       "name": "registeel",
-      "types": ["Steel", null],
+      "types": ["Steel"],
       "url": "http://localhost:5000/images/pokemon_transparent/379.png"
     },
     {
@@ -2289,13 +2289,13 @@
     {
       "id": 382,
       "name": "kyogre",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/382.png"
     },
     {
       "id": 383,
       "name": "groudon",
-      "types": ["Ground", null],
+      "types": ["Ground"],
       "url": "http://localhost:5000/images/pokemon_transparent/383.png"
     },
     {
@@ -2313,19 +2313,19 @@
     {
       "id": 386,
       "name": "deoxys-normal",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/386.png"
     },
     {
       "id": 387,
       "name": "turtwig",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/387.png"
     },
     {
       "id": 388,
       "name": "grotle",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/388.png"
     },
     {
@@ -2337,7 +2337,7 @@
     {
       "id": 390,
       "name": "chimchar",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/390.png"
     },
     {
@@ -2355,13 +2355,13 @@
     {
       "id": 393,
       "name": "piplup",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/393.png"
     },
     {
       "id": 394,
       "name": "prinplup",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/394.png"
     },
     {
@@ -2391,7 +2391,7 @@
     {
       "id": 399,
       "name": "bidoof",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/399.png"
     },
     {
@@ -2403,31 +2403,31 @@
     {
       "id": 401,
       "name": "kricketot",
-      "types": ["Bug", null],
+      "types": ["Bug"],
       "url": "http://localhost:5000/images/pokemon_transparent/401.png"
     },
     {
       "id": 402,
       "name": "kricketune",
-      "types": ["Bug", null],
+      "types": ["Bug"],
       "url": "http://localhost:5000/images/pokemon_transparent/402.png"
     },
     {
       "id": 403,
       "name": "shinx",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/403.png"
     },
     {
       "id": 404,
       "name": "luxio",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/404.png"
     },
     {
       "id": 405,
       "name": "luxray",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/405.png"
     },
     {
@@ -2445,13 +2445,13 @@
     {
       "id": 408,
       "name": "cranidos",
-      "types": ["Rock", null],
+      "types": ["Rock"],
       "url": "http://localhost:5000/images/pokemon_transparent/408.png"
     },
     {
       "id": 409,
       "name": "rampardos",
-      "types": ["Rock", null],
+      "types": ["Rock"],
       "url": "http://localhost:5000/images/pokemon_transparent/409.png"
     },
     {
@@ -2469,7 +2469,7 @@
     {
       "id": 412,
       "name": "burmy",
-      "types": ["Bug", null],
+      "types": ["Bug"],
       "url": "http://localhost:5000/images/pokemon_transparent/412.png"
     },
     {
@@ -2499,37 +2499,37 @@
     {
       "id": 417,
       "name": "pachirisu",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/417.png"
     },
     {
       "id": 418,
       "name": "buizel",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/418.png"
     },
     {
       "id": 419,
       "name": "floatzel",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/419.png"
     },
     {
       "id": 420,
       "name": "cherubi",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/420.png"
     },
     {
       "id": 421,
       "name": "cherrim",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/421.png"
     },
     {
       "id": 422,
       "name": "shellos",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/422.png"
     },
     {
@@ -2541,7 +2541,7 @@
     {
       "id": 424,
       "name": "ambipom",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/424.png"
     },
     {
@@ -2559,19 +2559,19 @@
     {
       "id": 427,
       "name": "buneary",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/427.png"
     },
     {
       "id": 428,
       "name": "lopunny",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/428.png"
     },
     {
       "id": 429,
       "name": "mismagius",
-      "types": ["Ghost", null],
+      "types": ["Ghost"],
       "url": "http://localhost:5000/images/pokemon_transparent/429.png"
     },
     {
@@ -2583,19 +2583,19 @@
     {
       "id": 431,
       "name": "glameow",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/431.png"
     },
     {
       "id": 432,
       "name": "purugly",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/432.png"
     },
     {
       "id": 433,
       "name": "chingling",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/433.png"
     },
     {
@@ -2625,7 +2625,7 @@
     {
       "id": 438,
       "name": "bonsly",
-      "types": ["Rock", null],
+      "types": ["Rock"],
       "url": "http://localhost:5000/images/pokemon_transparent/438.png"
     },
     {
@@ -2637,7 +2637,7 @@
     {
       "id": 440,
       "name": "happiny",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/440.png"
     },
     {
@@ -2673,13 +2673,13 @@
     {
       "id": 446,
       "name": "munchlax",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/446.png"
     },
     {
       "id": 447,
       "name": "riolu",
-      "types": ["Fighting", null],
+      "types": ["Fighting"],
       "url": "http://localhost:5000/images/pokemon_transparent/447.png"
     },
     {
@@ -2691,13 +2691,13 @@
     {
       "id": 449,
       "name": "hippopotas",
-      "types": ["Ground", null],
+      "types": ["Ground"],
       "url": "http://localhost:5000/images/pokemon_transparent/449.png"
     },
     {
       "id": 450,
       "name": "hippowdon",
-      "types": ["Ground", null],
+      "types": ["Ground"],
       "url": "http://localhost:5000/images/pokemon_transparent/450.png"
     },
     {
@@ -2727,19 +2727,19 @@
     {
       "id": 455,
       "name": "carnivine",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/455.png"
     },
     {
       "id": 456,
       "name": "finneon",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/456.png"
     },
     {
       "id": 457,
       "name": "lumineon",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/457.png"
     },
     {
@@ -2775,7 +2775,7 @@
     {
       "id": 463,
       "name": "lickilicky",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/463.png"
     },
     {
@@ -2787,19 +2787,19 @@
     {
       "id": 465,
       "name": "tangrowth",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/465.png"
     },
     {
       "id": 466,
       "name": "electivire",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/466.png"
     },
     {
       "id": 467,
       "name": "magmortar",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/467.png"
     },
     {
@@ -2817,13 +2817,13 @@
     {
       "id": 470,
       "name": "leafeon",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/470.png"
     },
     {
       "id": 471,
       "name": "glaceon",
-      "types": ["Ice", null],
+      "types": ["Ice"],
       "url": "http://localhost:5000/images/pokemon_transparent/471.png"
     },
     {
@@ -2841,7 +2841,7 @@
     {
       "id": 474,
       "name": "porygon-z",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/474.png"
     },
     {
@@ -2859,7 +2859,7 @@
     {
       "id": 477,
       "name": "dusknoir",
-      "types": ["Ghost", null],
+      "types": ["Ghost"],
       "url": "http://localhost:5000/images/pokemon_transparent/477.png"
     },
     {
@@ -2877,19 +2877,19 @@
     {
       "id": 480,
       "name": "uxie",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/480.png"
     },
     {
       "id": 481,
       "name": "mesprit",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/481.png"
     },
     {
       "id": 482,
       "name": "azelf",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/482.png"
     },
     {
@@ -2913,7 +2913,7 @@
     {
       "id": 486,
       "name": "regigigas",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/486.png"
     },
     {
@@ -2925,37 +2925,37 @@
     {
       "id": 488,
       "name": "cresselia",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/488.png"
     },
     {
       "id": 489,
       "name": "phione",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/489.png"
     },
     {
       "id": 490,
       "name": "manaphy",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/490.png"
     },
     {
       "id": 491,
       "name": "darkrai",
-      "types": ["Dark", null],
+      "types": ["Dark"],
       "url": "http://localhost:5000/images/pokemon_transparent/491.png"
     },
     {
       "id": 492,
       "name": "shaymin-land",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/492.png"
     },
     {
       "id": 493,
       "name": "arceus",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/493.png"
     },
     {
@@ -2967,25 +2967,25 @@
     {
       "id": 495,
       "name": "snivy",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/495.png"
     },
     {
       "id": 496,
       "name": "servine",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/496.png"
     },
     {
       "id": 497,
       "name": "serperior",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/497.png"
     },
     {
       "id": 498,
       "name": "tepig",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/498.png"
     },
     {
@@ -3003,109 +3003,109 @@
     {
       "id": 501,
       "name": "oshawott",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/501.png"
     },
     {
       "id": 502,
       "name": "dewott",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/502.png"
     },
     {
       "id": 503,
       "name": "samurott",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/503.png"
     },
     {
       "id": 504,
       "name": "patrat",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/504.png"
     },
     {
       "id": 505,
       "name": "watchog",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/505.png"
     },
     {
       "id": 506,
       "name": "lillipup",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/506.png"
     },
     {
       "id": 507,
       "name": "herdier",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/507.png"
     },
     {
       "id": 508,
       "name": "stoutland",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/508.png"
     },
     {
       "id": 509,
       "name": "purrloin",
-      "types": ["Dark", null],
+      "types": ["Dark"],
       "url": "http://localhost:5000/images/pokemon_transparent/509.png"
     },
     {
       "id": 510,
       "name": "liepard",
-      "types": ["Dark", null],
+      "types": ["Dark"],
       "url": "http://localhost:5000/images/pokemon_transparent/510.png"
     },
     {
       "id": 511,
       "name": "pansage",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/511.png"
     },
     {
       "id": 512,
       "name": "simisage",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/512.png"
     },
     {
       "id": 513,
       "name": "pansear",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/513.png"
     },
     {
       "id": 514,
       "name": "simisear",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/514.png"
     },
     {
       "id": 515,
       "name": "panpour",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/515.png"
     },
     {
       "id": 516,
       "name": "simipour",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/516.png"
     },
     {
       "id": 517,
       "name": "munna",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/517.png"
     },
     {
       "id": 518,
       "name": "musharna",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/518.png"
     },
     {
@@ -3129,31 +3129,31 @@
     {
       "id": 522,
       "name": "blitzle",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/522.png"
     },
     {
       "id": 523,
       "name": "zebstrika",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/523.png"
     },
     {
       "id": 524,
       "name": "roggenrola",
-      "types": ["Rock", null],
+      "types": ["Rock"],
       "url": "http://localhost:5000/images/pokemon_transparent/524.png"
     },
     {
       "id": 525,
       "name": "boldore",
-      "types": ["Rock", null],
+      "types": ["Rock"],
       "url": "http://localhost:5000/images/pokemon_transparent/525.png"
     },
     {
       "id": 526,
       "name": "gigalith",
-      "types": ["Rock", null],
+      "types": ["Rock"],
       "url": "http://localhost:5000/images/pokemon_transparent/526.png"
     },
     {
@@ -3171,7 +3171,7 @@
     {
       "id": 529,
       "name": "drilbur",
-      "types": ["Ground", null],
+      "types": ["Ground"],
       "url": "http://localhost:5000/images/pokemon_transparent/529.png"
     },
     {
@@ -3183,31 +3183,31 @@
     {
       "id": 531,
       "name": "audino",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/531.png"
     },
     {
       "id": 532,
       "name": "timburr",
-      "types": ["Fighting", null],
+      "types": ["Fighting"],
       "url": "http://localhost:5000/images/pokemon_transparent/532.png"
     },
     {
       "id": 533,
       "name": "gurdurr",
-      "types": ["Fighting", null],
+      "types": ["Fighting"],
       "url": "http://localhost:5000/images/pokemon_transparent/533.png"
     },
     {
       "id": 534,
       "name": "conkeldurr",
-      "types": ["Fighting", null],
+      "types": ["Fighting"],
       "url": "http://localhost:5000/images/pokemon_transparent/534.png"
     },
     {
       "id": 535,
       "name": "tympole",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/535.png"
     },
     {
@@ -3225,13 +3225,13 @@
     {
       "id": 538,
       "name": "throh",
-      "types": ["Fighting", null],
+      "types": ["Fighting"],
       "url": "http://localhost:5000/images/pokemon_transparent/538.png"
     },
     {
       "id": 539,
       "name": "sawk",
-      "types": ["Fighting", null],
+      "types": ["Fighting"],
       "url": "http://localhost:5000/images/pokemon_transparent/539.png"
     },
     {
@@ -3285,19 +3285,19 @@
     {
       "id": 548,
       "name": "petilil",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/548.png"
     },
     {
       "id": 549,
       "name": "lilligant",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/549.png"
     },
     {
       "id": 550,
       "name": "basculin-red-striped",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/550.png"
     },
     {
@@ -3321,19 +3321,19 @@
     {
       "id": 554,
       "name": "darumaka",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/554.png"
     },
     {
       "id": 555,
       "name": "darmanitan-standard",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/555.png"
     },
     {
       "id": 556,
       "name": "maractus",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/556.png"
     },
     {
@@ -3369,13 +3369,13 @@
     {
       "id": 562,
       "name": "yamask",
-      "types": ["Ghost", null],
+      "types": ["Ghost"],
       "url": "http://localhost:5000/images/pokemon_transparent/562.png"
     },
     {
       "id": 563,
       "name": "cofagrigus",
-      "types": ["Ghost", null],
+      "types": ["Ghost"],
       "url": "http://localhost:5000/images/pokemon_transparent/563.png"
     },
     {
@@ -3405,73 +3405,73 @@
     {
       "id": 568,
       "name": "trubbish",
-      "types": ["Poison", null],
+      "types": ["Poison"],
       "url": "http://localhost:5000/images/pokemon_transparent/568.png"
     },
     {
       "id": 569,
       "name": "garbodor",
-      "types": ["Poison", null],
+      "types": ["Poison"],
       "url": "http://localhost:5000/images/pokemon_transparent/569.png"
     },
     {
       "id": 570,
       "name": "zorua",
-      "types": ["Dark", null],
+      "types": ["Dark"],
       "url": "http://localhost:5000/images/pokemon_transparent/570.png"
     },
     {
       "id": 571,
       "name": "zoroark",
-      "types": ["Dark", null],
+      "types": ["Dark"],
       "url": "http://localhost:5000/images/pokemon_transparent/571.png"
     },
     {
       "id": 572,
       "name": "minccino",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/572.png"
     },
     {
       "id": 573,
       "name": "cinccino",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/573.png"
     },
     {
       "id": 574,
       "name": "gothita",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/574.png"
     },
     {
       "id": 575,
       "name": "gothorita",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/575.png"
     },
     {
       "id": 576,
       "name": "gothitelle",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/576.png"
     },
     {
       "id": 577,
       "name": "solosis",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/577.png"
     },
     {
       "id": 578,
       "name": "duosion",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/578.png"
     },
     {
       "id": 579,
       "name": "reuniclus",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/579.png"
     },
     {
@@ -3489,19 +3489,19 @@
     {
       "id": 582,
       "name": "vanillite",
-      "types": ["Ice", null],
+      "types": ["Ice"],
       "url": "http://localhost:5000/images/pokemon_transparent/582.png"
     },
     {
       "id": 583,
       "name": "vanillish",
-      "types": ["Ice", null],
+      "types": ["Ice"],
       "url": "http://localhost:5000/images/pokemon_transparent/583.png"
     },
     {
       "id": 584,
       "name": "vanilluxe",
-      "types": ["Ice", null],
+      "types": ["Ice"],
       "url": "http://localhost:5000/images/pokemon_transparent/584.png"
     },
     {
@@ -3525,7 +3525,7 @@
     {
       "id": 588,
       "name": "karrablast",
-      "types": ["Bug", null],
+      "types": ["Bug"],
       "url": "http://localhost:5000/images/pokemon_transparent/588.png"
     },
     {
@@ -3561,7 +3561,7 @@
     {
       "id": 594,
       "name": "alomomola",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/594.png"
     },
     {
@@ -3591,49 +3591,49 @@
     {
       "id": 599,
       "name": "klink",
-      "types": ["Steel", null],
+      "types": ["Steel"],
       "url": "http://localhost:5000/images/pokemon_transparent/599.png"
     },
     {
       "id": 600,
       "name": "klang",
-      "types": ["Steel", null],
+      "types": ["Steel"],
       "url": "http://localhost:5000/images/pokemon_transparent/600.png"
     },
     {
       "id": 601,
       "name": "klinklang",
-      "types": ["Steel", null],
+      "types": ["Steel"],
       "url": "http://localhost:5000/images/pokemon_transparent/601.png"
     },
     {
       "id": 602,
       "name": "tynamo",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/602.png"
     },
     {
       "id": 603,
       "name": "eelektrik",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/603.png"
     },
     {
       "id": 604,
       "name": "eelektross",
-      "types": ["Electric", null],
+      "types": ["Electric"],
       "url": "http://localhost:5000/images/pokemon_transparent/604.png"
     },
     {
       "id": 605,
       "name": "elgyem",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/605.png"
     },
     {
       "id": 606,
       "name": "beheeyem",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/606.png"
     },
     {
@@ -3657,49 +3657,49 @@
     {
       "id": 610,
       "name": "axew",
-      "types": ["Dragon", null],
+      "types": ["Dragon"],
       "url": "http://localhost:5000/images/pokemon_transparent/610.png"
     },
     {
       "id": 611,
       "name": "fraxure",
-      "types": ["Dragon", null],
+      "types": ["Dragon"],
       "url": "http://localhost:5000/images/pokemon_transparent/611.png"
     },
     {
       "id": 612,
       "name": "haxorus",
-      "types": ["Dragon", null],
+      "types": ["Dragon"],
       "url": "http://localhost:5000/images/pokemon_transparent/612.png"
     },
     {
       "id": 613,
       "name": "cubchoo",
-      "types": ["Ice", null],
+      "types": ["Ice"],
       "url": "http://localhost:5000/images/pokemon_transparent/613.png"
     },
     {
       "id": 614,
       "name": "beartic",
-      "types": ["Ice", null],
+      "types": ["Ice"],
       "url": "http://localhost:5000/images/pokemon_transparent/614.png"
     },
     {
       "id": 615,
       "name": "cryogonal",
-      "types": ["Ice", null],
+      "types": ["Ice"],
       "url": "http://localhost:5000/images/pokemon_transparent/615.png"
     },
     {
       "id": 616,
       "name": "shelmet",
-      "types": ["Bug", null],
+      "types": ["Bug"],
       "url": "http://localhost:5000/images/pokemon_transparent/616.png"
     },
     {
       "id": 617,
       "name": "accelgor",
-      "types": ["Bug", null],
+      "types": ["Bug"],
       "url": "http://localhost:5000/images/pokemon_transparent/617.png"
     },
     {
@@ -3711,19 +3711,19 @@
     {
       "id": 619,
       "name": "mienfoo",
-      "types": ["Fighting", null],
+      "types": ["Fighting"],
       "url": "http://localhost:5000/images/pokemon_transparent/619.png"
     },
     {
       "id": 620,
       "name": "mienshao",
-      "types": ["Fighting", null],
+      "types": ["Fighting"],
       "url": "http://localhost:5000/images/pokemon_transparent/620.png"
     },
     {
       "id": 621,
       "name": "druddigon",
-      "types": ["Dragon", null],
+      "types": ["Dragon"],
       "url": "http://localhost:5000/images/pokemon_transparent/621.png"
     },
     {
@@ -3753,7 +3753,7 @@
     {
       "id": 626,
       "name": "bouffalant",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/626.png"
     },
     {
@@ -3783,7 +3783,7 @@
     {
       "id": 631,
       "name": "heatmor",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/631.png"
     },
     {
@@ -3843,7 +3843,7 @@
     {
       "id": 641,
       "name": "tornadus-incarnate",
-      "types": ["Flying", null],
+      "types": ["Flying"],
       "url": "http://localhost:5000/images/pokemon_transparent/641.png"
     },
     {
@@ -3897,13 +3897,13 @@
     {
       "id": 650,
       "name": "chespin",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/650.png"
     },
     {
       "id": 651,
       "name": "quilladin",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/651.png"
     },
     {
@@ -3915,13 +3915,13 @@
     {
       "id": 653,
       "name": "fennekin",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/653.png"
     },
     {
       "id": 654,
       "name": "braixen",
-      "types": ["Fire", null],
+      "types": ["Fire"],
       "url": "http://localhost:5000/images/pokemon_transparent/654.png"
     },
     {
@@ -3933,13 +3933,13 @@
     {
       "id": 656,
       "name": "froakie",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/656.png"
     },
     {
       "id": 657,
       "name": "frogadier",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/657.png"
     },
     {
@@ -3951,7 +3951,7 @@
     {
       "id": 659,
       "name": "bunnelby",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/659.png"
     },
     {
@@ -3981,13 +3981,13 @@
     {
       "id": 664,
       "name": "scatterbug",
-      "types": ["Bug", null],
+      "types": ["Bug"],
       "url": "http://localhost:5000/images/pokemon_transparent/664.png"
     },
     {
       "id": 665,
       "name": "spewpa",
-      "types": ["Bug", null],
+      "types": ["Bug"],
       "url": "http://localhost:5000/images/pokemon_transparent/665.png"
     },
     {
@@ -4011,37 +4011,37 @@
     {
       "id": 669,
       "name": "flabebe",
-      "types": ["Fairy", null],
+      "types": ["Fairy"],
       "url": "http://localhost:5000/images/pokemon_transparent/669.png"
     },
     {
       "id": 670,
       "name": "floette",
-      "types": ["Fairy", null],
+      "types": ["Fairy"],
       "url": "http://localhost:5000/images/pokemon_transparent/670.png"
     },
     {
       "id": 671,
       "name": "florges",
-      "types": ["Fairy", null],
+      "types": ["Fairy"],
       "url": "http://localhost:5000/images/pokemon_transparent/671.png"
     },
     {
       "id": 672,
       "name": "skiddo",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/672.png"
     },
     {
       "id": 673,
       "name": "gogoat",
-      "types": ["Grass", null],
+      "types": ["Grass"],
       "url": "http://localhost:5000/images/pokemon_transparent/673.png"
     },
     {
       "id": 674,
       "name": "pancham",
-      "types": ["Fighting", null],
+      "types": ["Fighting"],
       "url": "http://localhost:5000/images/pokemon_transparent/674.png"
     },
     {
@@ -4053,19 +4053,19 @@
     {
       "id": 676,
       "name": "furfrou",
-      "types": ["Normal", null],
+      "types": ["Normal"],
       "url": "http://localhost:5000/images/pokemon_transparent/676.png"
     },
     {
       "id": 677,
       "name": "espurr",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/677.png"
     },
     {
       "id": 678,
       "name": "meowstic-male",
-      "types": ["Psychic", null],
+      "types": ["Psychic"],
       "url": "http://localhost:5000/images/pokemon_transparent/678.png"
     },
     {
@@ -4089,25 +4089,25 @@
     {
       "id": 682,
       "name": "spritzee",
-      "types": ["Fairy", null],
+      "types": ["Fairy"],
       "url": "http://localhost:5000/images/pokemon_transparent/682.png"
     },
     {
       "id": 683,
       "name": "aromatisse",
-      "types": ["Fairy", null],
+      "types": ["Fairy"],
       "url": "http://localhost:5000/images/pokemon_transparent/683.png"
     },
     {
       "id": 684,
       "name": "swirlix",
-      "types": ["Fairy", null],
+      "types": ["Fairy"],
       "url": "http://localhost:5000/images/pokemon_transparent/684.png"
     },
     {
       "id": 685,
       "name": "slurpuff",
-      "types": ["Fairy", null],
+      "types": ["Fairy"],
       "url": "http://localhost:5000/images/pokemon_transparent/685.png"
     },
     {
@@ -4149,13 +4149,13 @@
     {
       "id": 692,
       "name": "clauncher",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/692.png"
     },
     {
       "id": 693,
       "name": "clawitzer",
-      "types": ["Water", null],
+      "types": ["Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/693.png"
     },
     {
@@ -4197,7 +4197,7 @@
     {
       "id": 700,
       "name": "sylveon",
-      "types": ["Fairy", null],
+      "types": ["Fairy"],
       "url": "http://localhost:5000/images/pokemon_transparent/700.png"
     },
     {
@@ -4221,19 +4221,19 @@
     {
       "id": 704,
       "name": "goomy",
-      "types": ["Dragon", null],
+      "types": ["Dragon"],
       "url": "http://localhost:5000/images/pokemon_transparent/704.png"
     },
     {
       "id": 705,
       "name": "sliggoo",
-      "types": ["Dragon", null],
+      "types": ["Dragon"],
       "url": "http://localhost:5000/images/pokemon_transparent/705.png"
     },
     {
       "id": 706,
       "name": "goodra",
-      "types": ["Dragon", null],
+      "types": ["Dragon"],
       "url": "http://localhost:5000/images/pokemon_transparent/706.png"
     },
     {
@@ -4269,13 +4269,13 @@
     {
       "id": 712,
       "name": "bergmite",
-      "types": ["Ice", null],
+      "types": ["Ice"],
       "url": "http://localhost:5000/images/pokemon_transparent/712.png"
     },
     {
       "id": 713,
       "name": "avalugg",
-      "types": ["Ice", null],
+      "types": ["Ice"],
       "url": "http://localhost:5000/images/pokemon_transparent/713.png"
     },
     {
@@ -4293,7 +4293,7 @@
     {
       "id": 716,
       "name": "xerneas",
-      "types": ["Fairy", null],
+      "types": ["Fairy"],
       "url": "http://localhost:5000/images/pokemon_transparent/716.png"
     },
     {
@@ -4325,12 +4325,6 @@
       "name": "volcanion",
       "types": ["Fire", "Water"],
       "url": "http://localhost:5000/images/pokemon_transparent/721.png"
-    },
-    {
-      "id": 1010,
-      "name": "Shanny",
-      "types": ["psychic", "grass"],
-      "url": "https://loremflickr.com/256/256?lock=4567125196800000"
     }
   ],
   "totalPokemons": 721

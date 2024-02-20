@@ -10,6 +10,7 @@ export const getPokemons = createAsyncThunk(
       if (search) url += `&search=${search}`;
       if (type) url += `&type=${type}`;
       const response = await apiService.get(url);
+      console.log(response);
       const timeout = () => {
         return new Promise((resolve) => {
           setTimeout(() => {
@@ -18,6 +19,7 @@ export const getPokemons = createAsyncThunk(
         });
       };
       await timeout();
+      console.log(Array.isArray(response.data));
       return response.data;
     } catch (error) {
       return rejectWithValue(error);

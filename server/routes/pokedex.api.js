@@ -76,7 +76,7 @@ router.get("/", (req, res, next) => {
     //then select number of result by offset
     result = result.slice(offset, offset + limit);
     //send response
-    res.status(200).send(result);
+    res.status(200).send({ data: result });
   } catch (error) {
     next(error);
   }
