@@ -16,9 +16,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
+// no idea if this fixes CORS
+app.use(cors());
+
 app.use("/", indexRouter);
 
-app.use(cors());
 
 //catch when when request match no route
 app.use((req, res, next) => {
