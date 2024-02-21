@@ -10,7 +10,7 @@ import { LoadingButton } from "@mui/lab";
 import { addPokemon, editPokemon } from "../features/pokemons/pokemonSlice";
 import { useNavigate, useParams } from "react-router-dom";
 
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
 import { generateRandomPal } from "../components/randomPal";
 
@@ -26,20 +26,14 @@ const style = {
   p: 4,
 };
 
+const defaultValues = { name: "", id: "", url: "", type1: "", type2: "" };
 export default function PokemonModal({ open, setOpen, opt, setOpt }) {
   console.log("🚀 ~ PokemonModal ~ opt:", opt);
   const { pokemon } = useSelector((state) => state.pokemons.pokemon);
   const { id: ogId } = useParams();
   console.log("🚀 ~ PokemonModal ~ ogId :", ogId);
   const navigate = useNavigate();
-  const [defaultValues, setDefaultValues] = useState({
-    name: "",
-    id: "",
-    url: "",
-    type1: "",
-    type2: "",
-  });
-  const methods = useForm({ defaultValues });
+  const methods = useForm(defaultValues);
   const {
     handleSubmit,
     formState: { isSubmitting },
@@ -73,7 +67,6 @@ export default function PokemonModal({ open, setOpen, opt, setOpt }) {
       dispatch(
         editPokemon({ ogId, name, id, imgUrl: url, types: [type1, type2] })
       );
-      console.log("update pal - SUBMITTING...");
     }
     setOpen(false);
     navigate(`/pokemons/${id}`);
@@ -181,10 +174,7 @@ export default function PokemonModal({ open, setOpen, opt, setOpt }) {
                   type="submit"
                   variant="contained"
                   size="small"
-                  loading={
-                    isSubmitting
-                    // || isLoading
-                  }
+                  loading={isSubmitting}
                 >
                   {opt} Pokemon
                 </LoadingButton>
