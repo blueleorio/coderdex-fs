@@ -60,8 +60,8 @@ const ogId = pokemon.id;
       dispatch(editPokemon({ogId, name, id, imgUrl: url, types: [type1, type2] }));
       console.log("update pal - SUBMITTING...");
     }
-    // setOpen(false);
-    // navigate(`/pokemons/${id}`);
+     setOpen(false);
+     navigate(`/pokemons/${id}`);
   };
 
   const handleClose = () => setOpen(false);
