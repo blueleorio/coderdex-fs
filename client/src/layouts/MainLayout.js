@@ -8,15 +8,20 @@ import EggIcon from "@mui/icons-material/Egg";
 
 function MainLayout() {
   const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const option = "create";
+  const [opt, setOpt] = useState("");
+
+  const handleOpen = () => {
+    setOpen(true);
+    setOpt("create");
+  };
+  //   const option = "create";
   return (
     <Stack sx={{ minHeight: "100vh" }}>
       <MainHeader />
       <Outlet />
       <Box sx={{ flexGrow: 1 }} />
       <MainFooter />
-      <PokemonModal open={open} setOpen={setOpen} option={option} />
+      <PokemonModal open={open} setOpen={setOpen} opt={opt} setOpt={setOpt} />
       <Box
         sx={{
           position: "fixed",

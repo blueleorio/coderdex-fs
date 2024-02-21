@@ -8,9 +8,12 @@ import { alpha, Stack, Button } from "@mui/material";
 import { LoadingButton } from "@mui/lab";
 
 import { addPokemon, editPokemon } from "../features/pokemons/pokemonSlice";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
-import { fakerVI as faker } from "@faker-js/faker";
+import { useState, useEffect } from "react";
+
+import { generateRandomPal } from "../components/randomPal";
+
 const style = {
   position: "absolute",
   top: "50%",
@@ -23,97 +26,68 @@ const style = {
   p: 4,
 };
 
-const defaultValues = {
-  name: "",
-  id: "",
-  url: "",
-  type1: "",
-  type2: "",
-};
-
-export default function PokemonModal({ open, setOpen, option }) {
+export default function PokemonModal({ open, setOpen, opt, setOpt }) {
+  console.log("🚀 ~ PokemonModal ~ opt:", opt);
+  const { pokemon } = useSelector((state) => state.pokemons.pokemon);
+  const { id: ogId } = useParams();
+  console.log("🚀 ~ PokemonModal ~ ogId :", ogId);
   const navigate = useNavigate();
-  const methods;
-  if (option === "create") {
-methods = useForm(defaultValues)};
-
-
-  if (option === "update") {
-    palStat();
-  }
-
-
+  const [defaultValues, setDefaultValues] = useState({
+    name: "",
+    id: "",
+    url: "",
+    type1: "",
+    type2: "",
+  });
+  const methods = useForm({ defaultValues });
   const {
     handleSubmit,
     formState: { isSubmitting },
+    setValue,
   } = methods;
+
+  useEffect(() => {
+    if (opt === "update" && pokemon) {
+      setValue("name", pokemon.name);
+      setValue("id", pokemon.id);
+      setValue("url", pokemon.url);
+      setValue("type1", pokemon.types[0] || "");
+      setValue("type2", pokemon.types[1] || "");
+    } else {
+      setValue("name", "");
+      setValue("id", "");
+      setValue("url", "");
+      setValue("type1", "");
+      setValue("type2", "");
+    }
+  }, [opt, pokemon, setValue]);
+
   const dispatch = useDispatch();
-  const {pokemon} = useSelector((state) => (state.pokemon));
-const ogId = pokemon.id;
 
   const onSubmit = (data) => {
     const { name, id, url, type1, type2 } = data;
-    if (option === "create") {
+    if (opt === "create") {
       dispatch(addPokemon({ name, id, imgUrl: url, types: [type1, type2] }));
     }
-    if (option === "update") {
-      dispatch(editPokemon({ogId, name, id, imgUrl: url, types: [type1, type2] }));
+    if (opt === "update") {
+      dispatch(
+        editPokemon({ ogId, name, id, imgUrl: url, types: [type1, type2] })
+      );
       console.log("update pal - SUBMITTING...");
     }
-     setOpen(false);
-     navigate(`/pokemons/${id}`);
+    setOpen(false);
+    navigate(`/pokemons/${id}`);
   };
 
   const handleClose = () => setOpen(false);
 
-  function generateRandomPal() {
-    const pokemonTypes = [
-      "bug",
-      "dragon",
-      "fairy",
-      "fire",
-      "ghost",
-      "ground",
-      "normal",
-      "psychic",
-      "steel",
-      "dark",
-      "electric",
-      "fighting",
-      "flying",
-      "grass",
-      "ice",
-      "poison",
-      "rock",
-      "water",
-    ];
-    const sample = (arr) => {
-      const len = arr == null ? 0 : arr.length;
-      return len ? arr[Math.floor(Math.random() * len)] : undefined;
-    };
-    return {
-      id: faker.number.int({ min: 800, max: 999 }),
-      name: faker.person.firstName(),
-      types: [sample(pokemonTypes), sample(pokemonTypes)],
-      url: faker.image.url({ width: 256, height: 256 }),
-    };
-  }
-
   const Palomize = () => {
     const pal = generateRandomPal();
-    methods.setValue("name", pal.name);
-    methods.setValue("id", pal.id);
-    methods.setValue("url", pal.url);
-    methods.setValue("type1", pal.types[0]);
-    methods.setValue("type2", pal.types[1]);
-  };
-
-  const palStat = () => {
-    methods.setValue("name", pokemon.name);
-    methods.setValue("id", pokemon.id);
-    methods.setValue("url", pokemon.url);
-    methods.setValue("type1",pokemon.types[0]);
-    methods.setValue("type2", pokemon.types[1] ? pokemon.types[1]: "");
+    setValue("name", pal.name);
+    setValue("id", pal.id);
+    setValue("url", pal.url);
+    setValue("type1", pal.types[0]);
+    setValue("type2", pal.types[1]);
   };
 
   return (
@@ -154,7 +128,7 @@ const ogId = pokemon.id;
               <FTextField
                 name="url"
                 fullWidth
-                // rows={4}
+                rows={4}
                 placeholder="Image Url"
                 sx={{
                   "& fieldset": {
@@ -212,7 +186,7 @@ const ogId = pokemon.id;
                     // || isLoading
                   }
                 >
-                  {option} Pokemon
+                  {opt} Pokemon
                 </LoadingButton>
               </Box>
             </Stack>

@@ -259,9 +259,8 @@ router.put("/:Id", (req, res, next) => {
     //write and save to db.json
     fs.writeFileSync("D:\\VSCODE\\coderdex-fs\\server\\db.json", db);
     //put send response
-    console.log("update pal - APING...");
 
-    res.status(200).send(updatedPal);
+    res.status(200).send({ message: "Update successful", updatedPal });
   } catch (error) {
     next(error);
   }

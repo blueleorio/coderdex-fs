@@ -32,8 +32,12 @@ export const DetailPage = () => {
     (state) => state.pokemons.pokemon
   );
   const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const option = "update";
+  const [opt, setOpt] = useState("");
+
+  const handleOpen = () => {
+    setOpen(true);
+    setOpt("update");
+  };
 
   const { id } = useParams();
   const navigate = useNavigate();
@@ -211,7 +215,12 @@ export const DetailPage = () => {
                 >
                   Nuke It Before It Hatches
                 </Button>
-                <PokemonModal open={open} setOpen={setOpen} option={option} />
+                <PokemonModal
+                  open={open}
+                  setOpen={setOpen}
+                  opt={opt}
+                  setOpt={setOpt}
+                />
 
                 <Button
                   variant="contained"
