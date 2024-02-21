@@ -33,7 +33,16 @@ const defaultValues = {
 
 export default function PokemonModal({ open, setOpen, option }) {
   const navigate = useNavigate();
-  const methods = useForm(defaultValues);
+  const methods;
+  if (option === "create") {
+methods = useForm(defaultValues)};
+
+  }
+  if (option === "update") {
+    palStat();
+  }
+
+
   const {
     handleSubmit,
     formState: { isSubmitting },
