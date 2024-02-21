@@ -3,7 +3,7 @@ import { FormProvider, FTextField } from "./form";
 import Modal from "@mui/material/Modal";
 
 import { useForm } from "react-hook-form";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { alpha, Stack, Button } from "@mui/material";
 import { LoadingButton } from "@mui/lab";
 
@@ -39,6 +39,8 @@ export default function PokemonModal({ open, setOpen, option }) {
     formState: { isSubmitting },
   } = methods;
   const dispatch = useDispatch();
+  const {pokemon} = useSelector((state) => (state.pokemon));
+
 
   const onSubmit = (data) => {
     const { name, id, url, type1, type2 } = data;
@@ -98,11 +100,11 @@ export default function PokemonModal({ open, setOpen, option }) {
   };
 
   const palStat = () => {
-    methods.setValue("name", pal.name);
-    methods.setValue("id", pal.id);
-    methods.setValue("url", pal.url);
-    methods.setValue("type1", pal.types[0]);
-    methods.setValue("type2", pal.types[1]);
+    methods.setValue("name", pokemon.name);
+    methods.setValue("id", pokemon.id);
+    methods.setValue("url", pokemon.url);
+    methods.setValue("type1",pokemon.types[0]);
+    methods.setValue("type2", pokemon.types[1] ? pokemon.types[1]: "");
   };
 
   return (
