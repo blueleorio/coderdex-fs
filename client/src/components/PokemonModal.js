@@ -37,7 +37,7 @@ export default function PokemonModal({ open, setOpen, option }) {
   if (option === "create") {
 methods = useForm(defaultValues)};
 
-  }
+
   if (option === "update") {
     palStat();
   }
