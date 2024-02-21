@@ -49,7 +49,7 @@ methods = useForm(defaultValues)};
   } = methods;
   const dispatch = useDispatch();
   const {pokemon} = useSelector((state) => (state.pokemon));
-
+const ogId = pokemon.id;
 
   const onSubmit = (data) => {
     const { name, id, url, type1, type2 } = data;
@@ -57,7 +57,7 @@ methods = useForm(defaultValues)};
       dispatch(addPokemon({ name, id, imgUrl: url, types: [type1, type2] }));
     }
     if (option === "update") {
-      dispatch(editPokemon({ name, id, imgUrl: url, types: [type1, type2] }));
+      dispatch(editPokemon({ogId, name, id, imgUrl: url, types: [type1, type2] }));
       console.log("update pal - SUBMITTING...");
     }
     // setOpen(false);
