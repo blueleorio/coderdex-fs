@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const fs = require("fs");
+const path = require("path");
 /**
  * params: /
  * description: get all pals
@@ -52,10 +53,7 @@ router.get("/", (req, res, next) => {
     let offset = limit * (page - 1);
 
     //Read data from db.json then parse to JSobject
-    let db = fs.readFileSync(
-      "D:\\VSCODE\\coderdex-fs\\server\\db.json",
-      "utf-8"
-    );
+    let db = fs.readFileSync(path.join(__dirname, "..", "db.json"), "utf-8");
     db = JSON.parse(db);
     const { data } = db;
     //Filter data by title
@@ -117,10 +115,7 @@ router.get("/:id", (req, res, next) => {
       throw new Error("Invalid ID");
     }
 
-    let db = fs.readFileSync(
-      "D:\\VSCODE\\coderdex-fs\\server\\db.json",
-      "utf-8"
-    );
+    let db = fs.readFileSync(path.join(__dirname, "..", "db.json"), "utf-8");
     db = JSON.parse(db);
     const { data } = db;
 
@@ -175,10 +170,7 @@ router.post("/", (req, res, next) => {
     }
 
     // Read data from db.json then parse to JS object
-    let db = fs.readFileSync(
-      "D:\\VSCODE\\coderdex-fs\\server\\db.json",
-      "utf-8"
-    );
+    let db = fs.readFileSync(path.join(__dirname, "..", "db.json"), "utf-8");
     db = JSON.parse(db);
     const { data } = db;
 
@@ -198,7 +190,7 @@ router.post("/", (req, res, next) => {
     db = JSON.stringify(db);
 
     // Write the updated db object back to db.json
-    fs.writeFileSync("D:\\VSCODE\\coderdex-fs\\server\\db.json", db);
+    fs.writeFileSync(path.join(__dirname, "..", "db.json"), db);
 
     // Send the new Pokémon in the response
     res.status(201).send(newPal);
@@ -236,10 +228,7 @@ router.put("/:Id", (req, res, next) => {
     }
     //put processing
     //Read data from db.json then parse to JSobject
-    let db = fs.readFileSync(
-      "D:\\VSCODE\\coderdex-fs\\server\\db.json",
-      "utf-8"
-    );
+    let db = fs.readFileSync(path.join(__dirname, "..", "db.json"), "utf-8");
     db = JSON.parse(db);
     const { data } = db;
     //find pal by id
@@ -257,7 +246,7 @@ router.put("/:Id", (req, res, next) => {
 
     db = JSON.stringify(db);
     //write and save to db.json
-    fs.writeFileSync("D:\\VSCODE\\coderdex-fs\\server\\db.json", db);
+    fs.writeFileSync(path.join(__dirname, "..", "db.json"), db);
     //put send response
 
     res.status(200).send({ message: "Update successful", updatedPal });
@@ -282,10 +271,7 @@ router.delete("/:Id", (req, res, next) => {
     }
     //delete processing
     //Read data from db.json then parse to JSobject
-    let db = fs.readFileSync(
-      "D:\\VSCODE\\coderdex-fs\\server\\db.json",
-      "utf-8"
-    );
+    let db = fs.readFileSync(path.join(__dirname, "..", "db.json"), "utf-8");
     db = JSON.parse(db);
     const { data } = db;
     //find pal by id
@@ -302,7 +288,7 @@ router.delete("/:Id", (req, res, next) => {
     db = JSON.stringify(db);
     //write and save to db.json
 
-    fs.writeFileSync("D:\\VSCODE\\coderdex-fs\\server\\db.json", db);
+    fs.writeFileSync(path.join(__dirname, "..", "db.json"), db);
     //delete send response
     res.status(200).send({});
   } catch (error) {
