@@ -19,8 +19,16 @@ app.use(express.static(path.join(__dirname, "public")));
 // no idea if this fixes CORS
 app.use(cors());
 
-app.use("/", indexRouter);
+// Add Content Security Policy
+app.use((req, res, next) => {
+  res.setHeader(
+    "Content-Security-Policy",
+    "default-src 'self'; img-src 'self' data:;"
+  );
+  next();
+});
 
+app.use("/", indexRouter);
 
 //catch when when request match no route
 app.use((req, res, next) => {
