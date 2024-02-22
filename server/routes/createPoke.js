@@ -8,13 +8,15 @@ const createPoke = async () => {
 
   // Initialize data to an empty object
   let data = {};
-
-  newData = newData.slice(0, 721).map((poke, index) => {
+  const BE_URL = "https://coderdex-be-h9wi.onrender.com";
+  //localhost:5000
+  http: newData = newData.slice(0, 721).map((poke, index) => {
     return {
       id: index + 1,
       name: poke.Name,
       types: [poke.Type1, poke.Type2].filter((type) => type && type !== ""),
-      url: `http://localhost:5000/images/pokemon_transparent/${index + 1}.png`,
+      // url: `http://localhost:5000/images/pokemon_transparent/${index + 1}.png`,
+      url: `${BE_URL}/images/pokemon_transparent/${index + 1}.png`,
     };
   });
   data.data = newData;
